@@ -1,0 +1,21 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "home-loans",
+  "projectType": "application",
+  "sourceRoot": "apps/home-loans",
+  "tags": ["team:home-loans", "scope:loans"],
+  "implicitDependencies": ["loan-calculator"],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "dependsOn": [
+        { "projects": ["loan-calculator"], "target": "build-v1" }
+      ],
+      "outputs": ["{projectRoot}/.next"],
+      "options": {
+        "command": "npm run build --workspace=@nbfc/home-loans",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

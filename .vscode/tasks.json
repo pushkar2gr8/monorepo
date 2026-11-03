@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Personal loans demo",
+			"type": "shell",
+			"command": "npm run dev --workspace=@nbfc/personal-loans -- --port 3100",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

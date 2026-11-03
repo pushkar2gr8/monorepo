@@ -1,0 +1,17 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "loan-calculator",
+  "projectType": "library",
+  "sourceRoot": "libs/loan-calculator/src",
+  "tags": ["scope:shared", "type:ui"],
+  "targets": {
+    "build-v2": {
+      "executor": "nx:run-commands",
+      "outputs": ["{workspaceRoot}/dist/libs/loan-calculator-v2"],
+      "options": {
+        "command": "node tools/build-loan-calculator.mjs 2.0.0",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

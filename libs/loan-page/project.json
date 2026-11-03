@@ -1,0 +1,25 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "loan-page",
+  "projectType": "library",
+  "sourceRoot": "libs/loan-page/src",
+  "tags": ["scope:shared", "type:page"],
+  "targets": {
+    "build-v1": {
+      "executor": "nx:run-commands",
+      "outputs": ["{workspaceRoot}/dist/libs/loan-page"],
+      "options": {
+        "command": "node tools/build-loan-page.mjs 1.0.0 home-loans-v1",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "build-v2": {
+      "executor": "nx:run-commands",
+      "outputs": ["{workspaceRoot}/dist/libs/loan-page-v2"],
+      "options": {
+        "command": "node tools/build-loan-page.mjs 2.0.0 personal-loans-v2",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

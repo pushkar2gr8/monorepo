@@ -1,0 +1,16 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "form-workflow",
+  "projectType": "library",
+  "sourceRoot": "libs/form-workflow/src",
+  "tags": ["scope:shared", "type:feature"],
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node --test libs/form-workflow/test/workflow.test.cjs",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

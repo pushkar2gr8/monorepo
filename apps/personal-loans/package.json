@@ -1,0 +1,29 @@
+{
+  "name": "@nbfc/personal-loans",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "predev": "nx run loan-calculator:build-v2 && nx run loan-page:build-v2",
+    "prebuild": "nx run loan-calculator:build-v2 && nx run loan-page:build-v2",
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@nbfc/loan-calculator": "2.0.0",
+    "@module-federation/nextjs-mf": "^8.0.0",
+    "formik": "^2.4.6",
+    "next": "15.5.28",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "typescript": "5.9.3",
+    "webpack": "5.98.0"
+  },
+  "nbfcArtifactVersions": {
+    "@nbfc/loan-calculator": "2.0.0"
+  }
+}

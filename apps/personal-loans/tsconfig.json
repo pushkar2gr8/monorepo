@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@nbfc/loan-calculator": ["../../dist/libs/loan-calculator-v2/src/index.ts"],
+      "@nbfc/form-workflow": ["../../libs/form-workflow/src/index.ts"],
+      "@nbfc/loan-page": ["../../dist/libs/loan-page-v2/personal-loans-v2.tsx"]
+    },
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "target": "ES2017",
+    "moduleResolution": "node"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
